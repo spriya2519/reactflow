@@ -1,6 +1,6 @@
-import { useCallback } from 'react';
+
 import { Handle, Position } from 'reactflow';
-import { Button, Dialog, DialogContentText } from '@mui/material';
+import { Button, Dialog } from '@mui/material';
 import BUTTONCOLOR from './Button'
 import React from 'react';
 import Grid from '@mui/material/Grid';
@@ -17,7 +17,7 @@ function Rectangle({ data }) {
     // console.log("s",event.target.value)
     const filteredData = BUTTONCOLOR.filter((item) => (
 
-      item.id == event.target.value
+      item.id === event.target.value
 
     ))
     console.log("111111", filteredData)
