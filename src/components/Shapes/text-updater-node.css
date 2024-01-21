@@ -1,0 +1,16 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.full-screen-background {
+  height: 100%;
+
+
+}
