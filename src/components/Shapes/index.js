@@ -90,10 +90,9 @@ function ShapeFlow() {
         />
       </div>
       <center>
-        <hr></hr>
+      
         <footer style={{ color: "white", backgroundColor: "black", textAlign: "center", marginTop: '0rem', fontFamily: "-moz-initial" }}>
           &copy; 2024 Priya. All rights reserved.<br></br>
-          <hr></hr>
           *What is the goal of the app?
           The primary objective of this project is to create a comprehensive
           workflow visualization dashboard using ReactFlow, a powerful React library designed for
