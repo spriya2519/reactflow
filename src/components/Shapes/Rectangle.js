@@ -83,7 +83,7 @@ function Rectangle({ data }) {
 
 
               {item.imageUrl && (
-                <img src={item.imageUrl} alt={`Image ${item.id}`} style={{marginLeft:'5rem',marginTop:'5rem'}} />
+                <img src={item.imageUrl} alt={`${item.id}`} style={{marginLeft:'5rem',marginTop:'5rem'}} />
               )}
              <h3 style={{marginLeft:'10rem'}}>Name :  {item.Name}</h3> 
              <h3 style={{marginLeft:'10rem'}}>Age  :  {item.Age}</h3> 
