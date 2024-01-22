@@ -17,9 +17,10 @@ function Rectangle({ data }) {
     // console.log("s",event.target.value)
     const filteredData = BUTTONCOLOR.filter((item) => (
 
-      item.id == event.target.value
+      // item.id === event.target.value
+      String(item.id) === String(event.target.value)
 
-    ))
+    ));
     console.log("111111", filteredData)
     SetData(filteredData)
 
