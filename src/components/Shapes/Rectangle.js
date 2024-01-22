@@ -1,6 +1,6 @@
 
 import { Handle, Position } from 'reactflow';
-import { Button, Dialog } from '@mui/material';
+import { Button, Dialog, DialogContentText } from '@mui/material';
 import BUTTONCOLOR from './Button'
 import React from 'react';
 import Grid from '@mui/material/Grid';
@@ -72,7 +72,7 @@ function Rectangle({ data }) {
               <Button onClick={handleClose} style={{ marginLeft: "auto", backgroundColor: 'tomato', color: 'white' }}>X</Button>
             </div>
           </div>
-           hi
+        <DialogContentText>  
         <Card sx={{ display: 'flex' ,backgroundColor:'lightgoldenrodyellow'}}>
         <Box sx={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'center' }}>
           {Data.map((item) => (
@@ -97,6 +97,7 @@ function Rectangle({ data }) {
           ))}
             </Box>
       </Card>
+      </DialogContentText> 
       </Dialog>
     </>
   );
