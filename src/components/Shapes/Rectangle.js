@@ -59,47 +59,47 @@ function Rectangle({ data }) {
         onClose={handleClose}
         fullScreen
       >
+       
 
-
-        <div style={{ display: "flex", backgroundColor: "#5196CF", alignItems: "center", justifyContent: "space-between", height: '35px ' }}>
-          <div>
-            {/* Content for the first section */}
+          <div style={{ display: "flex", backgroundColor: "#5196CF", alignItems: "center", justifyContent: "space-between",height:'35px '}}>
+            <div>
+              {/* Content for the first section */}
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <h2 style={{color:'white'}}>Information About {data.text}  {data.name}</h2>
+            </div>
+            <div >
+              <Button onClick={handleClose} style={{ marginLeft: "auto", backgroundColor: 'tomato', color: 'white' }}>X</Button>
+            </div>
           </div>
-          <div style={{ textAlign: "center" }}>
-            <h2 style={{ color: 'white' }}>Information About {data.text}  {data.name}</h2>
-          </div>
-          <div >
-            <Button onClick={handleClose} style={{ marginLeft: "auto", backgroundColor: 'tomato', color: 'white' }}>X</Button>
-          </div>
-        </div>
+      
 
 
+ 
+        <Card sx={{ display: 'flex' ,backgroundColor:'lightgoldenrodyellow'}}>
+        <Box sx={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'center' }}>
+          {Data.map((item) => (
+            <div key={item.id}>
 
 
-        <Card sx={{ display: 'flex', backgroundColor: 'lightgoldenrodyellow' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+              {item.imageUrl && (
+                <img src={item.imageUrl} alt={`Image${item.id}`} style={{marginLeft:'5rem',marginTop:'5rem'}} />
+              )}
+             <h3 style={{marginLeft:'10rem'}}>Name :  {item.Name}</h3> 
+             <h3 style={{marginLeft:'10rem'}}>Age  :  {item.Age}</h3> 
+         
+         
+            </div>
+          ))}
+            </Box>
+            <Box sx={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'center' }}>
             {Data.map((item) => (
-              <div key={item.id}>
-
-
-                {item.imageUrl && (
-                  <img src={item.imageUrl} alt={`${item.id}`} style={{ marginLeft: '5rem', marginTop: '5rem' }} />
-                )}
-                <h3 style={{ marginLeft: '10rem' }}>Name :  {item.Name}</h3>
-                <h3 style={{ marginLeft: '10rem' }}>Age  :  {item.Age}</h3>
-
-
-              </div>
-            ))}
-          </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            {Data.map((item) => (
-              <div key={item.id}>
-                <h3 style={{ marginLeft: '10rem' }}>Information  :  {item.Information}</h3>
-              </div>
-            ))}
-          </Box>
-        </Card>
+            <div key={item.id}>
+            <h3 style={{marginLeft:'10rem'}}>Information  :  {item.Information}</h3>
+            </div>
+          ))}
+            </Box>
+      </Card>
       </Dialog>
     </>
   );
