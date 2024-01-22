@@ -72,10 +72,7 @@ function Rectangle({ data }) {
               <Button onClick={handleClose} style={{ marginLeft: "auto", backgroundColor: 'tomato', color: 'white' }}>X</Button>
             </div>
           </div>
-      
-
-
- 
+           hi
         <Card sx={{ display: 'flex' ,backgroundColor:'lightgoldenrodyellow'}}>
         <Box sx={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'center' }}>
           {Data.map((item) => (
